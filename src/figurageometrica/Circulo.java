@@ -31,6 +31,13 @@ public class Circulo extends FiguraGeometrica{
     }
 
     @Override
+    public String toString() {
+        return super.getNome() + "\n" + calcularPerimetro();
+    }
+    
+    
+
+    @Override
     public Double calcularPerimetro() {
         return 2 * Math.PI * raio;
     }
